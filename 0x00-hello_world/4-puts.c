@@ -1,4 +1,4 @@
-#include <stdio.h>
+4-puts.c#include <stdio.h>
 /**
  *main - this is the entry point
  *Return: this is the return value 0
