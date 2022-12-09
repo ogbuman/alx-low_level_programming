@@ -2,10 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-* main - assign a random number for n
-* return: return 0
+* main - prints if the number is positive, negative ,or zero
 * prints the status of n
-* Result: alway returns 0
+* Return: alway returns 0
 */
 int main(void)
 {
