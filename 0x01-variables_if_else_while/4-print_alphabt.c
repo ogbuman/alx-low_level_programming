@@ -12,8 +12,8 @@ if (c != 'q' || c != 'e')
 {
 putchar(c);
 }
-c++
+c++;
 }
-putchar('\n')
+putchar('\n');
 return (0);
 }
