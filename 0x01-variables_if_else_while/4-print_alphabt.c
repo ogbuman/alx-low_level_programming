@@ -1,0 +1,16 @@
+#include <stdio.h>
+/**
+* main - it prints out alphabet except q and e
+* Return: it returns 0
+*/
+int main(void)
+{
+char c = 'a';
+while (c <= z)
+{
+if (c != 'q' || c != 'e')
+{
+putchar(c);
+}
+return (0);
+}
