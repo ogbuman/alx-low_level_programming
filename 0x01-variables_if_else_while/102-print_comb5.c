@@ -1,35 +1,67 @@
 #include <stdio.h>
+
+
+
 /**
-* main - main block
-* Description: Print all possible combinations of two two-digit numbers.
-* Return: All good
-*/
+
+ * main - prints all possible comb of two
+
+ * digits number
+
+ * Return: 0 to show the succes of the program
+
+ */
+
 int main(void)
+  
 {
-int i, j;
-int a, b, c, d;
-for (i = 0; i < 100; i++)
-{
-a = i / 10; /* doubles fnum */
-b = i % 10; /* singles fnum */
-for (j = 0; j < 100; j++)
-{
-c = j / 10; /* doubles snum */
-d = j % 10; /* singles snum */
-if (a < c || (a == c && b < d))
-putchar(a + '0');
-putchar(b + '0');
-putchar(32);
-putchar(c + '0');
-putchar(d + '0');
-if (!(a == 9 && b == 8)
-{
-putchar(44);
-putchar(32);
+  
+  int n, m;
+  
+
+  
+  for (n = 0; n < 100; n++)
+    
+    {
+      
+      for (m = 0; m < 100; m++)
+	
+	{
+	  
+	  if (n < m)
+	    
+	    {
+	      
+	      putchar((n / 10) + 48);
+	      
+	      putchar((n % 10) + 48);
+	      
+	      putchar(' ');
+	      
+	      putchar((m / 10) + 48);
+	      
+	      putchar((m % 10) + 48);
+	      
+	      if (n != 98 || m != 99)
+		
+		{
+		  
+		  putchar(',');
+		  
+		  putchar(' ');
+		  
+		}
+	      
+	    }
+	  
+	}
+      
+    }
+  
+  putchar('\n');
+  
+  return (0);
+
 }
-}
-}
-}
-putchar(10);
-return (0);
-}
+
+
