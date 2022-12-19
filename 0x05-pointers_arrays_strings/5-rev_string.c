@@ -19,5 +19,5 @@ for (i = 0; i < k / 2; i++)
 tmp = s[i];
 s[i] = s[m];
 s[m--] = tmp;
-}  
+}
 }
