@@ -1,27 +1,51 @@
 #include <stdio.h>
+
 #include <stdlib.h>
+
 #include <time.h>
+
+
+
 /**
-* main - program that generates random valid passwords
-* for the program 101-crackme
-* Return: 0 fpr success*/
+
+ * main - main body
+
+ * Return: All good
+
+ */
+
+
+
 int main(void)
+  
 {
-int pass[100];
-int i, sum, n;
-sum = 0;
-srand(time(NULL));
-for (i = 0; i < 100; i++)
-pass[i] = rand() % 78;
-sum += (pass[i] + '0');
-putchar(pass[i] + '0');
-if ((2772 - sum) - '0' < 78)
-{
-n = 2772 - sum - '0';
-sum += n;
-putchar(n + '0');
-break;
-}
-}
-return (0);
+  
+  int myrand;
+  
+  int count;
+  
+  int total;
+  
+
+  
+  srand(time(NULL));
+  
+  for (count = 0, total = 2772; total > 122; count++)
+    
+    {
+      
+      myrand = (rand() % 127);
+      
+      printf("%c", myrand);
+      
+      total -= myrand;
+      
+    }
+  
+  printf("%c", total);
+  
+
+  
+  return (0);
+  
 }
